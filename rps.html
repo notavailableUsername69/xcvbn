@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+         }
+
+        h1 {
+            color: #d85605;
+        }
+
+        .choices {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .choice {
+            padding: 10px 20px;
+            background-color: #6BD66B;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .hand {
+            font-size: 28px;
+            margin-top: 20px;
+            white-space: pre;
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        body{
+          background-color: #F0C648;
+        }
+        @media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+  #game {
+    margin-top: 20px;
+  }
+  .row {
+    margin-bottom: 5px;
+  }
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="choices">
+        <div class="choice" onclick="playGame('rock')">Rock</div>
+        <div class="choice" onclick="playGame('paper')">Paper</div>
+        <div class="choice" onclick="playGame('scissors')">Scissors</div>
+    </div>
+
+    <div class="hand" id="userHand"></div>
+    <div class="hand" id="computerHand"></div>
+
+    <div class="result" id="result"></div>
+
+    <script src="rps.js"></script>
+</body>
+</html>
+ 
